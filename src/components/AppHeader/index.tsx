@@ -1,7 +1,8 @@
-import React, { FC } from "react";
-import { Menu, Dropdown } from "antd";
 import { DownOutlined } from "@ant-design/icons";
+import { Dropdown, Menu } from "antd";
 import Image from "next/image";
+import Link from "next/link";
+import { FC } from "react";
 
 const HeaderDropdown = () => {
   const menu = (
@@ -29,26 +30,27 @@ const HeaderDropdown = () => {
 
 const Header: FC = () => {
   return (
-    <div className="bg-[#29384D] p-4">
-      <div className="relative">
+    <div className="flex-col  bg-white ">
+      <Link
+        href="/"
+        className="flex align-middle relative max-w-[1120px] mx-auto w-full py-8 cursor-pointer"
+      >
         <Image
           src="/images/trieu-hoa-logo.png"
           alt="trieu-hoa-logo"
-          layout="fill"
+          width={117}
+          height={70}
         />
-      </div>
-      <nav>
-        <ul className="flex space-x-4">
-          <li>
-            <a href="#/" className="text-white">
-              Trang Chủ
-            </a>
-          </li>
-          <li>
-            <a href="#/" className="text-white">
-              Đào Tạo
-            </a>
-          </li>
+      </Link>
+      <nav className="bg-[#29384D] p-4">
+        <ul className="flex space-x-6 max-w-[1120px] mx-auto">
+          <Link href="/" className="text-white">
+            Trang Chủ
+          </Link>
+          <Link href="/" className="text-white">
+            Đào Tạo
+          </Link>
+
           <li>
             <HeaderDropdown />
           </li>
