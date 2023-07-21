@@ -36,7 +36,10 @@ const FeedBackSection = () => {
 
         <div className="mt-5 flex flex-nowrap justify-between gap-6">
           {feedBackItems.map((item, idx: number) => (
-            <div key={idx} className="h-[450px] relative w-1/3 p-5">
+            <div
+              key={idx}
+              className="h-[450px] relative w-1/3 p-5 rounded-t-xl overflow-hidden"
+            >
               <Image
                 src="/icon/flag-shape.svg"
                 alt="background"
@@ -45,11 +48,17 @@ const FeedBackSection = () => {
                 className="absolute top-0"
               />
 
-              <div className="relative z-10 text-6xl text-center text-black">
-                :
+              <div className="relative z-10 text-6xl flex justify-center text-center text-black">
+                <Image
+                  src="/icon/tag-icon.svg"
+                  alt="background"
+                  width={70}
+                  height={70}
+                  objectFit="cover"
+                />
               </div>
 
-              <p className="mt-7 relative z-10 text-base text-black">
+              <p className="mt-2 text-justify relative z-10 text-base text-black">
                 {item.desc}
               </p>
 
