@@ -30,7 +30,7 @@ const CoachingItems = [
 
 const CoachingSection = () => {
   return (
-    <div className="mt-[100px] max-w-[1120px] mx-auto h-full">
+    <div className="m-[100px] max-w-[1120px] mx-auto h-full">
       <h2 className="text-3xl font-medium leading-5 text-center pb-5 border-b-4 w-fit mx-auto border-gray-300">
         Đào tạo
       </h2>
