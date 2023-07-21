@@ -34,7 +34,7 @@ const Footer: FC<FooterProps> = () => {
                 <Link
                   href={item.url}
                   key={idx}
-                  className="cursor-pointer hover:opacity-70"
+                  className="cursor-pointer hover:opacity-70 xl:text-center"
                 >
                   {item.text}
                 </Link>

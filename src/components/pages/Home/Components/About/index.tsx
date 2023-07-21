@@ -15,14 +15,14 @@ const AboutAuthorSection = () => {
   return (
     <div className="mt-[100px] max-w-[1120px] mx-auto h-full">
       <h2 className="text-3xl font-medium leading-5 text-center pb-5 border-b-4 w-fit mx-auto border-gray-300">
-        About Author
+        Về Trieu Hoa
       </h2>
       <p className="text-1xl text-center w-full mt-4">
         Doanh nhân - Business Coach - KOLs
       </p>
 
-      <div className="flex flex-nowrap gap-10 justify-between w-full px-6 mt-12">
-        <div className="w-2/4 px-[40px] py-[55px] bg-slate-700 h-fit">
+      <div className="flex flex-wrap-reverse xl:flex-nowrap gap-10 justify-center xl:justify-between w-full px-6 mt-12">
+        <div className="w-full xl:w-2/4 px-[40px] py-[55px] bg-slate-700 h-fit">
           {authorAchivement.map((item, idx: number) => (
             <div key={idx} className="text-white">
               {item}
@@ -36,7 +36,7 @@ const AboutAuthorSection = () => {
           </Link>
         </div>
 
-        <div className="relative h-[334px] w-2/4 mt-20">
+        <div className="relative h-[334px] w-full xl:w-2/4 mt-20">
           <Image
             src="https://i.pravatar.cc/300"
             alt="banner about author"

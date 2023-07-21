@@ -1,8 +1,8 @@
 import { DownOutlined } from "@ant-design/icons";
-import { Dropdown, Menu } from "antd";
+import { Button, Drawer, Dropdown, Menu } from "antd";
 import Image from "next/image";
 import Link from "next/link";
-import { FC } from "react";
+import { FC, useState } from "react";
 
 const HeaderDropdown = () => {
   const menu = (
@@ -20,8 +20,8 @@ const HeaderDropdown = () => {
     <Dropdown overlay={menu} trigger={["click"]}>
       <a href="#/" onClick={(e) => e.preventDefault()} className="text-white">
         <div className="flex items-center space-x-1">
-          <span className="text-white font-semibold">Lĩnh vực kinh doanh</span>
-          <DownOutlined className="text-white" />
+          <span className="font-semibold">Lĩnh vực kinh doanh</span>
+          <DownOutlined className="" />
         </div>
       </a>
     </Dropdown>
@@ -29,11 +29,17 @@ const HeaderDropdown = () => {
 };
 
 const Header: FC = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => setIsMenuOpen((prev) => !prev);
+
   return (
     <div className="flex-col  bg-white ">
       <Link
         href="/"
-        className="flex align-middle relative max-w-[1120px] mx-auto w-full py-8 cursor-pointer"
+        className="flex align-middle items-center
+        relative max-w-[1120px] mx-auto w-full py-8 cursor-pointer
+        px-6 sm:px-0 justify-between"
       >
         <Image
           src="/images/trieu-hoa-logo.png"
@@ -41,8 +47,36 @@ const Header: FC = () => {
           width={117}
           height={70}
         />
+
+        <Button
+          type="dashed"
+          onClick={toggleMenu}
+          className="block md:hidden rounded-xs"
+        >
+          Menu Icon
+        </Button>
       </Link>
-      <nav className="bg-[#29384D] p-4">
+
+      <Drawer
+        title={null}
+        placement="right"
+        onClose={toggleMenu}
+        open={isMenuOpen}
+      >
+        <ul className="flex flex-col gap-3 mx-auto">
+          <Link href="/" className="text-base font-medium text-black mx-0">
+            Trang Chủ
+          </Link>
+          <Link href="/" className="text-base font-medium text-black mx-0">
+            Đào Tạo
+          </Link>
+          <Link href="/" className="text-base font-medium text-black mx-0">
+            Lĩnh Vực Kinh Doanh
+          </Link>
+        </ul>
+      </Drawer>
+
+      <nav className="hidden md:block bg-[#29384D] p-4">
         <ul className="flex space-x-6 max-w-[1120px] mx-auto">
           <Link href="/" className="text-white">
             Trang Chủ
