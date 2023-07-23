@@ -43,7 +43,7 @@ const CoachingSection = () => {
             <p className="mt-3 text-center font-normal">{item.description}</p>
             <Link href={item.url}>
               <button
-                className="mt-5 border-gray-200 border-2 py-3 px-7 mx-auto flex justify-center
+                className="mt-5 rounded-xl border-gray-200 border-2 py-3 px-7 mx-auto flex justify-center
                 hover:opacity-60
               "
               >
