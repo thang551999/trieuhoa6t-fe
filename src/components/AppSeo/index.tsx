@@ -72,7 +72,7 @@ const AppSeo: FC<AppSeoProps> = ({
           content: "",
         },
         {
-          name: "Trieu Hoa",
+          name: "author",
           content: "",
         },
       ]}

@@ -1,32 +1,28 @@
-import { DownOutlined } from "@ant-design/icons";
-import { Button, Drawer, Dropdown, Menu } from "antd";
+import { Button, Drawer, Dropdown, MenuProps } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 import { FC, useState } from "react";
 
-const HeaderDropdown = () => {
-  const menu = (
-    <Menu>
-      <Menu.SubMenu key="sub1" title="KD 1" />
+const items: MenuProps["items"] = [
+  {
+    key: "1",
+    label: <Link href="/">Đào Tạo 1</Link>,
+  },
+  {
+    key: "2",
+    label: <Link href="/">Đào Tạo 2</Link>,
+  },
+  {
+    key: "3",
+    label: <Link href="/">Đào Tạo 3</Link>,
+  },
+];
 
-      <Menu.SubMenu key="sub2" title="KD 2">
-        <Menu.Item key="2-1">Đào Tạo 1</Menu.Item>
-        <Menu.Item key="2-2">Đào Tạo 2</Menu.Item>
-      </Menu.SubMenu>
-    </Menu>
-  );
-
-  return (
-    <Dropdown overlay={menu} trigger={["click"]}>
-      <a href="#/" onClick={(e) => e.preventDefault()} className="text-white">
-        <div className="flex items-center space-x-1">
-          <span className="font-semibold">Lĩnh vực kinh doanh</span>
-          <DownOutlined className="" />
-        </div>
-      </a>
-    </Dropdown>
-  );
-};
+const MetaHeader = () => (
+  <Link href="/" className="text-white">
+    Đào Tạo
+  </Link>
+);
 
 const Header: FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -34,7 +30,7 @@ const Header: FC = () => {
   const toggleMenu = () => setIsMenuOpen((prev) => !prev);
 
   return (
-    <div className="flex-col  bg-white ">
+    <div className="flex-col bg-white ">
       <Link
         href="/"
         className="flex align-middle items-center
@@ -77,7 +73,7 @@ const Header: FC = () => {
       </Drawer>
 
       <nav className="hidden md:block bg-[#29384D] p-4">
-        <ul className="flex space-x-6 max-w-[1120px] mx-auto">
+        <ul className="flex space-x-6 max-w-[1120px] mx-auto justify-start flex-wrap">
           <Link href="/" className="text-white">
             Trang Chủ
           </Link>
@@ -85,9 +81,11 @@ const Header: FC = () => {
             Đào Tạo
           </Link>
 
-          <li>
-            <HeaderDropdown />
-          </li>
+          <Dropdown menu={{ items }}>
+            <span className="cursor-pointer text-white">
+              Lĩnh vực kinh doanh
+            </span>
+          </Dropdown>
         </ul>
       </nav>
     </div>
