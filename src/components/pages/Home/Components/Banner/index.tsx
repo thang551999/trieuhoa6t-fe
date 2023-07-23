@@ -21,7 +21,7 @@ const fakeDataBanner = [
     url: "/",
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
-    text: "Text 1 | Text 2 | Text 3",
+    text: "Enterpreneur | Bussiness trainer | Social activist",
     secondImage: "https://i.pravatar.cc/300",
     secondImageAlt: "avatar banner",
   },
@@ -63,7 +63,7 @@ const HomeBannerSection = () => {
 
             <div className="relative h-[554px] w-2/4">
               <Image
-                src={banner.secondImage}
+                src='/images/avatar1.jpg'
                 alt={banner.secondImageAlt}
                 layout="fill"
                 objectFit="cover"

@@ -3,27 +3,21 @@ import React from "react";
 
 const CoachingItems = [
   {
-    name: "Chiến lược 01",
+    name: "Bất động sản",
     description:
-      "Kinh nghiệm và bài học từ hành trình khởi nghiệp FnB của Trieu Hoa sẽ giúp bạn có những kiến thức chuyên sâu về ngành rất đặc thù này.",
+      "Dành cho đối tượng muốn tìm hiểu để mua nhà ở hoặc muốn tham gia đầu tư bất động sản với vốn đầu tư nhỏ.",
     url: "",
   },
   {
-    name: "Chiến lược 01",
+    name: "Tài chính cá nhân",
     description:
-      "Kinh nghiệm và bài học từ hành trình khởi nghiệp FnB của Trieu Hoa sẽ giúp bạn có những kiến thức chuyên sâu về ngành rất đặc thù này.",
+      "Giúp học viên quản lý tốt dòng tiền và hướng tới mục tiêu tự do tài chính",
     url: "",
   },
   {
-    name: "Chiến lược 03",
+    name: "Phát triển bản thân",
     description:
-      "Kinh nghiệm và bài học từ hành trình khởi nghiệp FnB của Trieu Hoa sẽ giúp bạn có những kiến thức chuyên sâu về ngành rất đặc thù này.",
-    url: "",
-  },
-  {
-    name: "Chiến lược 04",
-    description:
-      "Kinh nghiệm và bài học từ hành trình khởi nghiệp FnB của Trieu Hoa sẽ giúp bạn có những kiến thức chuyên sâu về ngành rất đặc thù này.",
+      "Ngoài Bất động sản và tài chính cá nhân 6T Academy tổ chức nhiều lớp phát triển bản thân với nội dung phong phú. Đặc biệt là các lớp hướng dẫn khai phá tiềm năng,gia tăng năng lực cá nhân trên cơ sở khoa học của Ngành tâm lý học và các môn Huyền học như tử vi,thần số học,chiêm tinh,tarot...",
     url: "",
   },
 ];

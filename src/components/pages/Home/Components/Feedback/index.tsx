@@ -3,7 +3,7 @@ import React from "react";
 
 const feedBackItems = [
   {
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, totam quam! Obcaecati non optio nulla, dignissimos nesciunt maxime reiciendis numquam nostrum sint, repellendus quaerat quasi! Ab voluptate officiis dolorum placeat!",
+    desc: "Thật sự ấn tượng với khoá A2 Nhập môn đầu tư bất động sản bởi kiến thức dễ hiểu và sát thực tế. Có những điều tưởng như đơn giản nhưng mình chưa được biết trước đó. Nội dung ngắn gọn súc tích và hữu ích cho người mới bắt đầu.",
     avatar: "https://i.pravatar.cc/300",
     name: "Đối tác 1",
     roles: "Đối tác 01",
@@ -63,22 +63,22 @@ const FeedBackSection = () => {
               </p>
 
               <div className="absolute bottom-0 left-[50%] rounded-full translate-x-[-50%] translate-y-[-50px] xl:translate-y-[-50px] overflow-hidden">
-                <Image
+                {/* <Image
                   src={item.avatar}
                   alt="avatar-author"
                   width={120}
                   height={140}
                   quality={100}
-                />
+                /> */}
               </div>
 
               <p className="w-full mt-7 absolute bottom-0 z-10 text-center translate-x-[-24px] text-xl font-bold text-black">
                 {item.name}
               </p>
 
-              <p className="w-full mt-7 absolute bottom-[-20px] z-10 text-center translate-x-[-24px] text-base text-black">
+              {/* <p className="w-full mt-7 absolute bottom-[-20px] z-10 text-center translate-x-[-24px] text-base text-black">
                 {item.roles}
-              </p>
+              </p> */}
             </div>
           ))}
         </div>
