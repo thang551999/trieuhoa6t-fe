@@ -5,19 +5,19 @@ const feedBackItems = [
   {
     desc: "Thật sự ấn tượng với khoá A2 Nhập môn đầu tư bất động sản bởi kiến thức dễ hiểu và sát thực tế. Có những điều tưởng như đơn giản nhưng mình chưa được biết trước đó. Nội dung ngắn gọn súc tích và hữu ích cho người mới bắt đầu.",
     avatar: "https://i.pravatar.cc/300",
-    name: "Đối tác 1",
+    name: "Nguyễn Hương",
     roles: "Đối tác 01",
   },
   {
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, totam quam! Obcaecati non optio nulla, dignissimos nesciunt maxime reiciendis numquam nostrum sint, repellendus quaerat quasi! Ab voluptate officiis dolorum placeat!",
+    desc: "Hơi tiếc vì không được biết đến chị chị Hoa sớm hơn. Cảm ơn chị vì luôn nhiệt tình và năng lượng trong tất cả các buổi. Học đến khoá thứ ba vẫn thấy hay như những ngày đầu. Chúc chị Hoa và 6T Academy Thành công hơn nữa",
     avatar: "https://i.pravatar.cc/300",
-    name: "Đối tác 2",
-    roles: "Quản lí VinID",
+    name: "Trà My",
+    roles: "Trà My",
   },
   {
-    desc: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem, totam quam! Obcaecati non optio nulla, dignissimos nesciunt maxime reiciendis numquam nostrum sint, repellendus quaerat quasi! Ab voluptate officiis dolorum placeat!",
+    desc: 'Trước đây em rất thích đi xem bói và cảm thấy bị ảnh hưởng rất nhiều từ những lời phán của các "thầy". Sau khi tham dự một số lớp phát triển bản thân em đã cảm thấy thông suốt và tự tin xây dựng một lộ trình riêng cho bản thân mình. Số phận tốt được kiến tạo từ những hạt giống nhỏ bé gieo hàng ngày,dày công chăm sóc vun tròing sẽ có ngày được hái quả ngọt.',
     avatar: "https://i.pravatar.cc/300",
-    name: "Đối tác 3",
+    name: "Linh Phan",
     roles: "Forbes 2018",
   },
 ];
