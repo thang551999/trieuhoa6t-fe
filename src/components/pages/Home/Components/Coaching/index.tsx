@@ -40,7 +40,7 @@ const CoachingSection = () => {
 
       <div className="mt-12 flex items-stretch justify-between lg:gap-7 gap-12 lg:flex-nowrap flex-wrap">
         {CoachingItems.map((item, idx: number) => (
-          <div key={idx} className="px-5 py-12 rounded-lg shadow-xl">
+          <div key={idx} className="px-5 py-12 rounded-2xl shadow-xl">
             <Link href={item.url}>
               <div className="text-center text-xl font-bold cursor-pointer hover:opacity-70">
                 {item.name}
