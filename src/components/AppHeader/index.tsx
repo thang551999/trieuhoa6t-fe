@@ -86,6 +86,9 @@ const Header: FC = () => {
               Lĩnh vực kinh doanh
             </span>
           </Dropdown>
+          <Link href="/" className="text-white">
+           Thiện nguyện
+          </Link>
         </ul>
       </nav>
     </div>
