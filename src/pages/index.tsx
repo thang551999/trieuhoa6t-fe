@@ -16,7 +16,7 @@ Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <AppLayout
       title="Trieu Hoa"
-      metaDescription="Bussiness trainer-Social activist"
+      metaDescription="trieuhoa triệu hoa trieuhoa6t đào tạo khoá học 6t Bussiness trainer-Social activist"
       socialImageUrl="/images/avatar1.jpg"
     >
       {page}
