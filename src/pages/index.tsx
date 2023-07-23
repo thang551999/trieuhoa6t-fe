@@ -13,7 +13,15 @@ const Home: NextPageWithLayout = () => {
 };
 
 Home.getLayout = function getLayout(page: ReactElement) {
-  return <AppLayout>{page}</AppLayout>;
+  return (
+    <AppLayout
+      title="Trieu Hoa"
+      metaDescription="Bussiness trainer-Social activist"
+      socialImageUrl="/images/avatar1.jpg"
+    >
+      {page}
+    </AppLayout>
+  );
 };
 
 export const getServerSideProps: GetServerSideProps = async () => {

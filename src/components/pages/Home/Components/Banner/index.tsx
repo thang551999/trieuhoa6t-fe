@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Carousel } from "antd";
 import Image from "next/image";
@@ -22,7 +23,7 @@ const fakeDataBanner = [
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
     text: "Enterpreneur | Bussiness trainer | Social activist",
-    secondImage: "https://i.pravatar.cc/300",
+    secondImage: "/images/avatar1.jpg",
     secondImageAlt: "avatar banner",
   },
   {
@@ -30,7 +31,7 @@ const fakeDataBanner = [
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
     text: "Text 1 | Text 2 | Text 3",
-    secondImage: "https://i.pravatar.cc/300",
+    secondImage: "/images/avatar1.jpg",
     secondImageAlt: "avatar banner",
   },
 ];
@@ -63,11 +64,12 @@ const HomeBannerSection = () => {
 
             <div className="relative h-[554px] w-2/4">
               <Image
-                src='/images/avatar1.jpg'
+                src="/images/avatar1.jpg"
                 alt={banner.secondImageAlt}
                 layout="fill"
                 objectFit="cover"
                 quality={100}
+                className="object-scale-down"
               />
             </div>
           </div>

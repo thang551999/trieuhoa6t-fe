@@ -3,9 +3,9 @@ import Link from "next/link";
 import React from "react";
 
 const authorAchivement = [
-  '- Founder 6T Academy',
+  "- Founder 6T Academy",
   "- Founder AV luxury homestay",
-  "- Sáng lập và điều hành 6T Dự án tặng cơm cho bệnh nhân chạy thận."
+  "- Sáng lập và điều hành 6T Dự án tặng cơm cho bệnh nhân chạy thận.",
 ];
 
 const AboutAuthorSection = () => {
@@ -15,7 +15,7 @@ const AboutAuthorSection = () => {
         Về Trieu Hoa
       </h2>
       <p className="text-1xl text-center w-full mt-4">
-      Bussiness trainer-Social activist
+        Bussiness trainer-Social activist
       </p>
 
       <div className="flex flex-wrap-reverse xl:flex-nowrap gap-10 justify-center xl:justify-between w-full px-6 mt-12">
@@ -35,11 +35,12 @@ const AboutAuthorSection = () => {
 
         <div className="relative h-[434px] w-full xl:w-2/4 mt-20">
           <Image
-             src='/images/avatar2.jpg'
+            src="/images/avatar2.jpg"
             alt="banner about author"
             layout="fill"
             objectFit="cover"
             quality={100}
+            className="object-scale-down"
           />
         </div>
       </div>
