@@ -62,7 +62,7 @@ const HomeBannerSection = () => {
               </p>
             </div>
 
-            <div className="relative h-[554px] w-2/4">
+            <div className="relative h-[354px] md:h-[554px] w-2/4">
               <Image
                 src="/images/avatar1.jpg"
                 alt={banner.secondImageAlt}

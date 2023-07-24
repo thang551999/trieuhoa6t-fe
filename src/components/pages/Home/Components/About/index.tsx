@@ -18,8 +18,8 @@ const AboutAuthorSection = () => {
         Bussiness trainer-Social activist
       </p>
 
-      <div className="flex flex-wrap-reverse xl:flex-nowrap gap-10 justify-center xl:justify-between w-full px-6 mt-12">
-        <div className="w-full xl:w-2/4 px-[40px] py-[55px] bg-slate-700 h-fit">
+      <div className="flex flex-wrap-reverse xl:flex-nowrap gap-10 justify-center xl:justify-between w-full px-6 mt-0 md:mt-12">
+        <div className="w-full xl:w-2/4 px-5 md:px-[40px] py-10 md:py-[55px] bg-slate-700 h-fit">
           {authorAchivement.map((item, idx: number) => (
             <div key={idx} className="text-white">
               {item}
@@ -33,7 +33,7 @@ const AboutAuthorSection = () => {
           </Link>
         </div>
 
-        <div className="relative h-[434px] w-full xl:w-2/4 mt-20">
+        <div className="relative h-[434px] w-full xl:w-2/4 mt-10 md:mt-20">
           <Image
             src="/images/avatar2.jpg"
             alt="banner about author"

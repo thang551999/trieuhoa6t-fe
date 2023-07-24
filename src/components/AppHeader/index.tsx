@@ -49,7 +49,7 @@ const Header: FC = () => {
           onClick={toggleMenu}
           className="block md:hidden rounded-xs"
         >
-          Menu Icon
+          Menu
         </Button>
       </Link>
 
@@ -87,7 +87,7 @@ const Header: FC = () => {
             </span>
           </Dropdown>
           <Link href="/" className="text-white">
-           Thiện nguyện
+            Thiện nguyện
           </Link>
         </ul>
       </nav>
