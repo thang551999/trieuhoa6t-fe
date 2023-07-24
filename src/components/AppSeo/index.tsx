@@ -30,7 +30,7 @@ const AppSeo: FC<AppSeoProps> = ({
 }) => {
   const metaDescriptionSeo = metaDescription?.substring(0, 256);
   const defaultTitle = title || "";
-  const defaultMetaDescription = "";
+  const defaultMetaDescription = metaDescriptionSeo || "";
 
   return (
     <NextSeo

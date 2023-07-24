@@ -34,6 +34,7 @@ const AppLayout: FC<
       metaDescription={metaDescription}
       additionalLinkTags={additionalLinkTags}
     />
+
     <div className={classNames("layout-container", className)}>
       <Header />
       <Content>{children}</Content>
