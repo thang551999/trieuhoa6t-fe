@@ -15,9 +15,9 @@ const Home: NextPageWithLayout = () => {
 Home.getLayout = function getLayout(page: ReactElement) {
   return (
     <AppLayout
-      title="Trieu Hoa 6T"
-      metaDescription="Bussiness trainer-Social activist"
-      socialImageUrl="/images/avatar1.jpg"
+      title="Trieu Hoa"
+      metaDescription="trieuhoa triệu hoa trieuhoa6t đào tạo khoá học 6t Bussiness trainer-Social activist"
+      socialImageUrl="https://trieuhoa.s3.ap-southeast-1.amazonaws.com/trieu-hoa-logo.png"
     >
       {page}
     </AppLayout>

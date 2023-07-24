@@ -1,13 +1,19 @@
-import { Html, Head, Main, NextScript } from 'next/document'
+import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="dzlOZreYa16qgyfoATRxbcV-Frvhe6onpKhqB5KveAE"
+        />
+      </Head>
+
       <body>
         <Main />
         <NextScript />
       </body>
     </Html>
-  )
+  );
 }
