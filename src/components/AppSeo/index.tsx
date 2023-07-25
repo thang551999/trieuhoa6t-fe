@@ -56,7 +56,7 @@ const AppSeo: FC<AppSeoProps> = ({
         {
           rel: "icon",
           type: "image/x-icon",
-          href: faviconImageUrl || "/favicon.ico",
+          href: faviconImageUrl || "/images/trieu-hoa-logo.png",
         },
         ...(additionalLinkTags && additionalLinkTags?.length > 0
           ? additionalLinkTags

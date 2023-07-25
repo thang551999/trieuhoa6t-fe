@@ -44,16 +44,16 @@ const Header: FC = () => {
           height={70}
         />
 
-        <Button
+        {/* <Button
           type="dashed"
           onClick={toggleMenu}
           className="block md:hidden rounded-xs"
         >
           Menu
-        </Button>
+        </Button> */}
       </Link>
 
-      <Drawer
+      {/* <Drawer
         title={null}
         placement="right"
         onClose={toggleMenu}
@@ -70,10 +70,10 @@ const Header: FC = () => {
             Lĩnh Vực Kinh Doanh
           </Link>
         </ul>
-      </Drawer>
+      </Drawer> */}
 
-      <nav className="hidden md:block bg-[#29384D] p-4">
-        <ul className="flex space-x-6 max-w-[1120px] mx-auto justify-start flex-wrap">
+      <nav className="bg-[#29384D] p-4">
+        <ul className="flex gap-6 max-w-[1120px] mx-auto justify-start flex-wrap">
           <Link href="/" className="text-white">
             Trang Chủ
           </Link>

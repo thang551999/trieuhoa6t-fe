@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { FC } from "react";
 
@@ -25,17 +26,21 @@ const Footer: FC<FooterProps> = () => {
           <div className="flex flex-col px-10 items-center justify-center">
             <div className="flex md:flex-row flex-col mb-4 md:mb-0 justify-between w-full">
               <Link href="/" className="mx-auto md:mx-[unset]">
-                <p className="text-lg font-bold cursor-pointer hover:opacity-70">
-                  Logo
-                </p>
+                <Image
+                  src="/images/trieu-hoa-logo-white.png"
+                  alt="trieu-hoa-logo"
+                  width={200}
+                  height={70}
+                />
               </Link>
 
-              <div className="mt-4 md:mt-0 mx-auto md:mx-[unset]">
+              <div className="max-w-[240px] mt-4 md:mt-0 mx-auto md:mx-[unset]">
                 <p className="text-sm text-gray-300">
-                  <span className="font-bold">Địa chỉ:</span> Hà Nội, Việt Nam
+                  <span className="font-bold">Địa chỉ:</span> Tầng 7, Số 53 Lãng
+                  Yên, Bạch Đằng, Quận Hai Bà Trưng, Hà Nội
                 </p>
                 <p className="text-sm text-gray-300">
-                  <span className="font-bold">Phone:</span> (+84) 123-456-789
+                  <span className="font-bold">Phone:</span> (+84) 0911 749 696
                 </p>
               </div>
             </div>
@@ -57,8 +62,7 @@ const Footer: FC<FooterProps> = () => {
           {/* Copyright */}
           <div className="mt-8 text-center">
             <p className="text-sm">
-              &copy; {new Date().getFullYear()} Your Website. All rights
-              reserved.
+              &copy; {new Date().getFullYear()} TrieuHoa6T. All rights reserved.
             </p>
           </div>
         </div>

@@ -8,6 +8,8 @@ export default function Document() {
           name="google-site-verification"
           content="dzlOZreYa16qgyfoATRxbcV-Frvhe6onpKhqB5KveAE"
         />
+
+        <link rel="icon" href="/trieuhoa-icon.png" />
       </Head>
 
       <body>
