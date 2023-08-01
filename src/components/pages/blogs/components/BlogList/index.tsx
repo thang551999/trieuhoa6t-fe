@@ -1,7 +1,4 @@
-import { Col, Row } from "antd";
-import Item from "antd/es/list/Item";
 import Image from "next/image";
-import React from "react";
 
 const exampleData = [
   {
@@ -41,12 +38,9 @@ const BlogList = () => {
     <div className="w-full mx-auto">
       <div className="title">Trên Báo Chí</div>
 
-      <Row
-        // gutter={[24, 36]}
-        className="mt-6 flex flex-wrap items-stretch gap-2"
-      >
+      <div className="mt-6 flex flex-wrap items-stretch gap-2">
         {exampleData.map((data, idx: number) => (
-          <Col
+          <div
             className="max-w-sm w-full bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700"
             key={idx}
           >
@@ -69,7 +63,7 @@ const BlogList = () => {
               <div className="mt-2 font-normal text-black-200">
                 {data.author}
               </div>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+              <p className="my-2 font-normal text-gray-700 dark:text-gray-400">
                 {data.description}
               </p>
               <button
@@ -79,9 +73,9 @@ const BlogList = () => {
                 Xem thêm
               </button>
             </div>
-          </Col>
+          </div>
         ))}
-      </Row>
+      </div>
     </div>
   );
 };

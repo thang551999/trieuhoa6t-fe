@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Carousel } from "antd";
-import Image from "next/image";
 import Link from "next/link";
+import Image from "next/image";
 
 const settings = {
   dots: false,
@@ -10,8 +10,8 @@ const settings = {
   infinite: true,
   speed: 500,
   swipeToSlide: true,
-  autoplay: false,
-  autoplaySpeed: 5000,
+  autoplay: true,
+  autoplaySpeed: 2000,
   pauseOnHover: true,
   nextArrow: <div>Next</div>,
   prevArrow: <div>Previous</div>,
@@ -25,6 +25,7 @@ const fakeDataBanner = [
     text: "Enterpreneur | Bussiness trainer | Social activist",
     secondImage: "/images/avatar1.jpg",
     secondImageAlt: "avatar banner",
+    mainBackground: "/images/main-banner.jpg",
   },
   {
     url: "/",
@@ -33,6 +34,16 @@ const fakeDataBanner = [
     text: "Text 1 | Text 2 | Text 3",
     secondImage: "/images/avatar1.jpg",
     secondImageAlt: "avatar banner",
+    mainBackground: "/images/main-banner.jpg",
+  },
+  {
+    url: "/",
+    src: "/images/trieu-hoa-logo.png",
+    altImage: "trieu-hoa-logo",
+    text: "Text 1 | Text 2 | Text 3",
+    secondImage: "/images/avatar1.jpg",
+    secondImageAlt: "avatar banner",
+    mainBackground: "/images/main-banner.jpg",
   },
 ];
 
@@ -43,9 +54,21 @@ const HomeBannerSection = () => {
         {fakeDataBanner.map((banner, idx: number) => (
           <div
             key={idx}
-            className="flex flex-nowrap flex-auto align-middle justify-between bg-white h-full"
+            className="flex flex-nowrap flex-auto align-middle justify-between bg-white 
+              relative md:w-full h-[700px]
+            "
           >
-            <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
+            <Image
+              src={banner.mainBackground}
+              alt={banner.altImage}
+              layout="fill"
+              // width={1620}
+              // height={1}
+              objectFit="cover"
+              quality={100}
+              className="object-cover"
+            />
+            {/* <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
               <Link href={banner.url} className="p-4">
                 <Image
                   src={banner.src}
@@ -71,7 +94,7 @@ const HomeBannerSection = () => {
                 quality={100}
                 className="object-scale-down"
               />
-            </div>
+            </div> */}
           </div>
         ))}
       </Carousel>
