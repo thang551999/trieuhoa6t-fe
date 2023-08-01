@@ -12,7 +12,7 @@ const AboutAuthorSection = () => {
   return (
     <div className="mt-[100px] max-w-[1120px] mx-auto h-full">
       <h2 className="text-3xl font-medium leading-5 text-center pb-5 border-b-4 w-fit mx-auto border-gray-300">
-        Về Trieu Hoa
+        Về Triệu Hoa
       </h2>
       <p className="text-1xl text-center w-full mt-4">
         Bussiness trainer-Social activist
@@ -35,7 +35,7 @@ const AboutAuthorSection = () => {
 
         <div className="relative h-[434px] w-full xl:w-2/4 mt-10 md:mt-20">
           <Image
-            src="/images/avatar2.jpg"
+            src="/images/newavatar2.jpg"
             alt="banner about author"
             layout="fill"
             objectFit="cover"

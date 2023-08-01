@@ -1,8 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
 import { Carousel } from "antd";
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 
 const settings = {
   dots: false,
@@ -10,8 +10,8 @@ const settings = {
   infinite: true,
   speed: 500,
   swipeToSlide: true,
-  autoplay: true,
-  autoplaySpeed: 2000,
+  autoplay: false,
+  autoplaySpeed: 1500,
   pauseOnHover: true,
   nextArrow: <div>Next</div>,
   prevArrow: <div>Previous</div>,
@@ -22,19 +22,17 @@ const fakeDataBanner = [
     url: "/",
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
-    text: "Enterpreneur | Bussiness trainer | Social activist",
-    secondImage: "/images/avatar1.jpg",
+    text: "Bussiness trainer | Social activist",
+    secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
-    mainBackground: null,
   },
   {
     url: "/",
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
     text: "Text 1 | Text 2 | Text 3",
-    secondImage: "/images/avatar1.jpg",
+    secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
-    mainBackground: "/images/main-banner.jpg",
   },
 ];
 
@@ -45,52 +43,35 @@ const HomeBannerSection = () => {
         {fakeDataBanner.map((banner, idx: number) => (
           <div
             key={idx}
-            className="flex flex-nowrap flex-auto align-middle justify-between bg-white 
-              relative md:w-full h-[700px]
-            "
+            className="flex flex-nowrap flex-auto align-middle justify-between bg-white h-full"
           >
-            {banner.mainBackground ? (
+            <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
+              <Link href={banner.url} className="p-4">
+                <Image
+                  src={banner.src}
+                  alt={banner.altImage}
+                  width={334}
+                  height={240}
+                  objectFit="cover"
+                  quality={100}
+                />
+              </Link>
+
+              <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
+                {banner.text}
+              </p>
+            </div>
+
+            <div className="relative h-[354px] md:h-[554px] w-2/4">
               <Image
-                src={banner.mainBackground}
-                alt={banner.altImage}
+                src="/images/avatar1.jpg"
+                alt={banner.secondImageAlt}
                 layout="fill"
-                // width={1620}
-                // height={1}
                 objectFit="cover"
                 quality={100}
-                className="object-cover"
+                className="object-scale-down"
               />
-            ) : (
-              <>
-                <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
-                  <Link href={banner.url} className="p-4">
-                    <Image
-                      src={banner.src}
-                      alt={banner.altImage}
-                      width={334}
-                      height={240}
-                      objectFit="cover"
-                      quality={100}
-                    />
-                  </Link>
-
-                  <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
-                    {banner.text}
-                  </p>
-                </div>
-
-                <div className="relative h-[354px] md:h-[554px] w-2/4">
-                  <Image
-                    src="/images/avatar1.jpg"
-                    alt={banner.secondImageAlt}
-                    layout="fill"
-                    objectFit="cover"
-                    quality={100}
-                    className="object-scale-down"
-                  />
-                </div>
-              </>
-            )}
+            </div>
           </div>
         ))}
       </Carousel>
