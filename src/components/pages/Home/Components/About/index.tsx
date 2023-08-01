@@ -14,10 +14,6 @@ const AboutAuthorSection = () => {
       <h2 className="text-3xl font-medium leading-5 text-center pb-5 border-b-4 w-fit mx-auto border-gray-300">
         Về Triệu Hoa
       </h2>
-      <p className="text-1xl text-center w-full mt-4">
-        Bussiness trainer-Social activist
-      </p>
-
       <div className="flex flex-wrap-reverse xl:flex-nowrap gap-10 justify-center xl:justify-between w-full px-6 mt-0 md:mt-12">
         <div className="w-full xl:w-2/4 px-5 md:px-[40px] py-10 md:py-[55px] bg-slate-700 h-fit">
           {authorAchivement.map((item, idx: number) => (
