@@ -26,15 +26,15 @@ const fakeDataBanner = [
     secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
   },
-  // {
-  //   url: "/",
-  //   src: "/images/trieu-hoa-logo.png",
-  //   altImage: "trieu-hoa-logo",
-  //   text: "Text 1 | Text 2 | Text 3",
-  //   secondImage: "/images/newavatar1.jpg",
-  //   secondImageAlt: "avatar banner",
-  //   banner:'/images/main-banner.jpg'
-  // },
+  {
+    url: "/",
+    src: "/images/trieu-hoa-logo.png",
+    altImage: "trieu-hoa-logo",
+    text: "Text 1 | Text 2 | Text 3",
+    secondImage: "/images/newavatar1.jpg",
+    secondImageAlt: "avatar banner",
+    banner:'/images/main-banner.jpg'
+  },
 ];
 
 const HomeBannerSection = () => {
@@ -59,7 +59,7 @@ const HomeBannerSection = () => {
               </Link>
 
               <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
-                Bussiness trainer |
+                Bussiness trainer
               </p>
               <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
                Social activist
