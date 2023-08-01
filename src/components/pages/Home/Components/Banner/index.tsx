@@ -25,16 +25,7 @@ const fakeDataBanner = [
     text: "Enterpreneur | Bussiness trainer | Social activist",
     secondImage: "/images/avatar1.jpg",
     secondImageAlt: "avatar banner",
-    mainBackground: "/images/main-banner.jpg",
-  },
-  {
-    url: "/",
-    src: "/images/trieu-hoa-logo.png",
-    altImage: "trieu-hoa-logo",
-    text: "Text 1 | Text 2 | Text 3",
-    secondImage: "/images/avatar1.jpg",
-    secondImageAlt: "avatar banner",
-    mainBackground: "/images/main-banner.jpg",
+    mainBackground: null,
   },
   {
     url: "/",
@@ -58,43 +49,48 @@ const HomeBannerSection = () => {
               relative md:w-full h-[700px]
             "
           >
-            <Image
-              src={banner.mainBackground}
-              alt={banner.altImage}
-              layout="fill"
-              // width={1620}
-              // height={1}
-              objectFit="cover"
-              quality={100}
-              className="object-cover"
-            />
-            {/* <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
-              <Link href={banner.url} className="p-4">
-                <Image
-                  src={banner.src}
-                  alt={banner.altImage}
-                  width={334}
-                  height={240}
-                  objectFit="cover"
-                  quality={100}
-                />
-              </Link>
-
-              <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
-                {banner.text}
-              </p>
-            </div>
-
-            <div className="relative h-[354px] md:h-[554px] w-2/4">
+            {banner.mainBackground ? (
               <Image
-                src="/images/avatar1.jpg"
-                alt={banner.secondImageAlt}
+                src={banner.mainBackground}
+                alt={banner.altImage}
                 layout="fill"
+                // width={1620}
+                // height={1}
                 objectFit="cover"
                 quality={100}
-                className="object-scale-down"
+                className="object-cover"
               />
-            </div> */}
+            ) : (
+              <>
+                <div className="w-2/4 left cursor-pointer flex flex-col align-middle items-center justify-center">
+                  <Link href={banner.url} className="p-4">
+                    <Image
+                      src={banner.src}
+                      alt={banner.altImage}
+                      width={334}
+                      height={240}
+                      objectFit="cover"
+                      quality={100}
+                    />
+                  </Link>
+
+                  <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
+                    {banner.text}
+                  </p>
+                </div>
+
+                <div className="relative h-[354px] md:h-[554px] w-2/4">
+                  <Image
+                    src="/images/avatar1.jpg"
+                    alt={banner.secondImageAlt}
+                    layout="fill"
+                    objectFit="cover"
+                    quality={100}
+                    className="object-scale-down"
+                  />
+                </div>
+              </>
+            )}
           </div>
         ))}
       </Carousel>
