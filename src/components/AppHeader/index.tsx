@@ -77,14 +77,12 @@ const Header: FC = () => {
           <Link href="/" className="text-white">
             Trang Chủ
           </Link>
-          <Link href="/" className="text-white">
-            Đào Tạo
+          <Link href="/blogs" className="text-white">
+            Bài viết
           </Link>
 
           <Dropdown menu={{ items }}>
-            <span className="cursor-pointer text-white">
-              Lĩnh vực kinh doanh
-            </span>
+            <span className="cursor-pointer text-white">Đào Tạo</span>
           </Dropdown>
           <Link href="/" className="text-white">
             Thiện nguyện
