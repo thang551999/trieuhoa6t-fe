@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import React from "react";
-import { Carousel } from "antd";
+import { Carousel, Grid } from "antd";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -26,6 +26,7 @@ const fakeDataBanner = [
     secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
     mainBackground: null,
+    mobileBackground: null,
   },
   {
     url: "/",
@@ -35,11 +36,16 @@ const fakeDataBanner = [
     secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
     banner: "/images/main-banner.jpg",
-    mainBackground: "/images/banner01.jpg",
+    mainBackground: "/images/banner01-desktop.jpg",
+    mobileBackground: "/images/banner01-mobile.jpg",
   },
 ];
 
+const { useBreakpoint } = Grid;
+
 const HomeBannerSection = () => {
+  const { xs } = useBreakpoint();
+
   return (
     <div className="home-page-container__banner">
       <Carousel {...settings} className="h-full">
@@ -51,10 +57,10 @@ const HomeBannerSection = () => {
           >
             {banner.mainBackground ? (
               <Image
-                src={banner.mainBackground}
+                src={xs ? banner.mobileBackground : banner.mainBackground}
                 alt={banner.altImage}
-                width={1620}
-                height={354}
+                width={xs ? 390 : 1620}
+                height={xs ? 354 : 354}
                 objectFit="cover"
                 quality={100}
                 className="object-cover mx-auto"
