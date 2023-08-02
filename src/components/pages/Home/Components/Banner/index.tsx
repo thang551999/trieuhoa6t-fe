@@ -31,7 +31,7 @@ const fakeDataBanner = [
     url: "/",
     src: "/images/trieu-hoa-logo.png",
     altImage: "trieu-hoa-logo",
-    text: "Text 1 | Text 2 | Text 3",
+    text: "Bussiness trainer | Social activist",
     secondImage: "/images/newavatar1.jpg",
     secondImageAlt: "avatar banner",
     banner: "/images/main-banner.jpg",
@@ -73,14 +73,18 @@ const HomeBannerSection = () => {
                     />
                   </Link>
 
-                  <p className="text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
+                  <p className="hidden md:block text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
                     {banner.text}
+                  </p>
+
+                  <p className="block: md:hidden text-center font-serif text-base antialiased font-medium tracking-wide text-orange-400">
+                    Bussiness trainer <br /> Social activist
                   </p>
                 </div>
 
                 <div className="relative h-[354px] md:h-[554px] w-2/4">
                   <Image
-                    src="/images/avatar1.jpg"
+                    src="/images/newavatar1.jpg"
                     alt={banner.secondImageAlt}
                     layout="fill"
                     objectFit="cover"
