@@ -39,6 +39,17 @@ const fakeDataBanner = [
     mainBackground: "/images/banner01-desktop.jpg",
     mobileBackground: "/images/banner01-mobile.jpg",
   },
+  {
+    url: "/",
+    src: "/images/trieu-hoa-logo.png",
+    altImage: "trieu-hoa-logo",
+    text: "Bussiness trainer | Social activist",
+    secondImage: "/images/newavatar1.jpg",
+    secondImageAlt: "avatar banner",
+    banner: "/images/main-banner.jpg",
+    mainBackground: "/images/new-banner01.jpg",
+    mobileBackground: "/images/new-banner01.jpg",
+  },
 ];
 
 const { useBreakpoint } = Grid;
@@ -60,10 +71,9 @@ const HomeBannerSection = () => {
                 src={xs ? banner.mobileBackground : banner.mainBackground}
                 alt={banner.altImage}
                 width={xs ? 390 : 1620}
-                height={xs ? 354 : 354}
-                objectFit="cover"
+                height={xs ? 354 : 554}
                 quality={100}
-                className="object-cover mx-auto"
+                className="h-[354px] w-full md:h-[554px] object-cover md:object-contain mx-auto"
               />
             ) : (
               <>
