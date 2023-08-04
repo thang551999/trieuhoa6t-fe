@@ -48,7 +48,7 @@ const fakeDataBanner = [
     secondImageAlt: "avatar banner",
     banner: "/images/main-banner.jpg",
     mainBackground: "/images/new-banner01.jpg",
-    mobileBackground: "/images/new-banner01.jpg",
+    mobileBackground: "/images/main-banner.jpg",
   },
 ];
 
