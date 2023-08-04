@@ -11,7 +11,7 @@ const settings = {
   speed: 500,
   swipeToSlide: true,
   autoplay: true,
-  autoplaySpeed: 1500,
+  autoplaySpeed: 2500,
   pauseOnHover: true,
   nextArrow: <div>Next</div>,
   prevArrow: <div>Previous</div>,
